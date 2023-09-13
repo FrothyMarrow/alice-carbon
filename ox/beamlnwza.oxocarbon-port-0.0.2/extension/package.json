@@ -1,0 +1,22 @@
+{
+  "name": "oxocarbon-port",
+  "displayName": "oxocarbon-port",
+  "publisher": "beamlnwza",
+  "description": "port form nvim theme repo : https://github.com/nyoom-engineering/oxocarbon.nvim",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "oxocarbon-port",
+        "uiTheme": "vs-dark",
+        "path": "./themes/oxocarbon-port-color-theme.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "alc-carbon-theme",
+  "displayName": "alc-carbon-theme",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "alc-carbon-them",
+        "uiTheme": "vs-dark",
+        "path": "./themes/alc-carbon-them-color-theme.json"
+      }
+    ]
+  }
+}

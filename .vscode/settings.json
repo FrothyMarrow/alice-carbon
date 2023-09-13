@@ -1,0 +1,4 @@
+{
+  "Lua.runtime.version": "Lua 5.4",
+  "Lua.diagnostics.globals": ["write_json", "read_json", "out_file_path"]
+}

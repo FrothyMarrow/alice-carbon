@@ -1,0 +1,739 @@
+{
+  "#c5c5c5": ["icon.foreground", "icon.foreground"],
+  "#676E9500": ["button.border", "button.border"],
+  "#50567C": ["editorCodeLens.foreground", "editorCodeLens.foreground"],
+  "#598DEF64": [
+    "editorSuggestWidget.selectedBackground",
+    "editorSuggestWidget.selectedBackground",
+    "welcomePage.tileHoverBackground"
+  ],
+  "#598DEF33": [
+    "peekViewEditor.matchHighlightBackground",
+    "peekViewEditor.matchHighlightBackground"
+  ],
+  "#45B7461A": [
+    "mergeEditor.change.background",
+    "mergeEditor.change.background"
+  ],
+  "#4480F4": [
+    "editorInfo.foreground",
+    "editorInfo.foreground",
+    "editorOverviewRuler.infoForeground",
+    "debugConsole.infoForeground",
+    "inputValidation.infoForeground",
+    "editorSuggestWidget.highlightForeground",
+    "focusBorder",
+    "inputValidation.infoBorder",
+    "problemsInfoIcon.foreground",
+    "pickerGroup.foreground",
+    "activityBar.dropBorder",
+    "activityBar.activeFocusBorder",
+    "list.focusHighlightForeground",
+    "pickerGroup.border",
+    "statusBar.focusBorder"
+  ],
+  "#4b516a": [
+    "extensionButton.background",
+    "extensionButton.background",
+    "extensionIcon.preReleaseForeground"
+  ],
+  "#181a1f": ["checkbox.border", "checkbox.border"],
+  "#F8F90000": ["editor.findMatchBorder", "editor.findMatchBorder"],
+  "#598DEFB3": [
+    "menubar.selectionBackground",
+    "menubar.selectionBackground",
+    "menu.selectionBackground"
+  ],
+  "#2C313A": [
+    "list.inactiveSelectionBackground",
+    "list.inactiveSelectionBackground",
+    "list.activeSelectionBackground"
+  ],
+  "#CED5E1": [
+    "profileBadge.foreground",
+    "profileBadge.foreground",
+    "badge.foreground"
+  ],
+  "#9DA5B3": [
+    "settings.dropdownForeground",
+    "settings.dropdownForeground",
+    "statusBar.foreground",
+    "sideBarTitle.foreground",
+    "settings.numberInputForeground",
+    "settings.textInputForeground",
+    "editor.foreground",
+    "input.foreground",
+    "editorLineNumber.activeForeground",
+    "statusBar.noFolderForeground",
+    "symbolIcon.folderForeground",
+    "peekViewTitleLabel.foreground",
+    "settings.checkboxForeground",
+    "sideBarSectionHeader.foreground",
+    "dropdown.foreground",
+    "peekViewResult.fileForeground"
+  ],
+  "#FF907000": ["editorBracketMatch.border", "editorBracketMatch.border"],
+  "#00809900": [
+    "editor.selectionHighlightBorder",
+    "editor.selectionHighlightBorder",
+    "editor.wordHighlightBorder"
+  ],
+  "#A2ABE519": ["minimapSlider.background", "minimapSlider.background"],
+  "#6495EE": [
+    "editorBracketHighlight.foreground3",
+    "editorBracketHighlight.foreground3",
+    "symbolIcon.methodForeground",
+    "terminal.ansiBrightBlue",
+    "editorBracketHighlight.foreground6",
+    "symbolIcon.constructorForeground",
+    "symbolIcon.functionForeground",
+    "symbolIcon.eventForeground",
+    "charts.blue"
+  ],
+  "#282c34": [
+    "terminal.background",
+    "terminal.background",
+    "editorOverviewRuler.background",
+    "panel.background",
+    "activityBar.activeBorder",
+    "welcomePage.progress.background",
+    "welcomePage.background",
+    "sideBarSectionHeader.background",
+    "tab.unfocusedActiveBackground",
+    "minimap.background",
+    "editor.background",
+    "editorGutter.background",
+    "activityBar.background",
+    "peekViewTitle.background",
+    "input.background",
+    "peekViewResult.background",
+    "breadcrumb.background",
+    "editorPane.background",
+    "titleBar.activeBackground",
+    "activityBar.activeBackground",
+    "tab.activeBackground"
+  ],
+  "#EEF3FF7F": [
+    "editorOverviewRuler.findMatchForeground",
+    "editorOverviewRuler.findMatchForeground"
+  ],
+  "#0080997F": [
+    "editor.selectionHighlightBackground",
+    "editor.selectionHighlightBackground",
+    "editor.wordHighlightBackground"
+  ],
+  "#B0B7C3BF": ["descriptionForeground", "descriptionForeground"],
+  "#98C379": [
+    "gitDecoration.addedResourceForeground",
+    "gitDecoration.addedResourceForeground",
+    "charts.green"
+  ],
+  "#598DEF66": [
+    "list.hoverBackground",
+    "list.hoverBackground",
+    "tab.unfocusedHoverBackground",
+    "tab.hoverBackground",
+    "statusBarItem.hoverBackground",
+    "settings.focusedRowBackground",
+    "statusBarItem.prominentHoverBackground",
+    "list.focusBackground"
+  ],
+  "#454963": [
+    "tree.indentGuidesStroke",
+    "tree.indentGuidesStroke",
+    "editorIndentGuide.background",
+    "charts.lines"
+  ],
+  "#45B7463F": [
+    "merge.incomingHeaderBackground",
+    "merge.incomingHeaderBackground",
+    "merge.incomingContentBackground",
+    "editorOverviewRuler.incomingContentForeground"
+  ],
+  "#598DEF59": [
+    "selection.background",
+    "selection.background",
+    "editorOverviewRuler.currentContentForeground",
+    "merge.currentHeaderBackground",
+    "terminal.selectionBackground",
+    "editor.selectionBackground",
+    "merge.currentContentBackground"
+  ],
+  "#8E99B1": [
+    "menu.foreground",
+    "menu.foreground",
+    "menu.separatorBackground",
+    "peekViewTitleDescription.foreground",
+    "editorSuggestWidget.foreground",
+    "symbolIcon.fileForeground",
+    "sideBar.foreground",
+    "titleBar.activeForeground",
+    "peekViewResult.lineForeground",
+    "breadcrumb.foreground"
+  ],
+  "#CF68E1cc": [
+    "editorBracketPairGuide.activeBackground5",
+    "editorBracketPairGuide.activeBackground5",
+    "editorBracketPairGuide.activeBackground2"
+  ],
+  "#5889EA": [
+    "editorGroup.focusedEmptyBorder",
+    "editorGroup.focusedEmptyBorder",
+    "list.highlightForeground"
+  ],
+  "#ff0000": [
+    "listFilterWidget.noMatchesOutline",
+    "listFilterWidget.noMatchesOutline"
+  ],
+  "#23272F": [
+    "settings.textInputBackground",
+    "settings.textInputBackground",
+    "settings.dropdownBackground",
+    "dropdown.listBackground",
+    "editorHoverWidget.background",
+    "settings.checkboxBackground",
+    "dropdown.background",
+    "editorHoverWidget.statusBarBackground",
+    "settings.numberInputBackground",
+    "editorSuggestWidget.background"
+  ],
+  "#D2D5DB": [
+    "list.activeSelectionIconForeground",
+    "list.activeSelectionIconForeground"
+  ],
+  "#676E95E5": [
+    "profileBadge.background",
+    "profileBadge.background",
+    "badge.background"
+  ],
+  "#31353c": ["textBlockQuote.background", "textBlockQuote.background"],
+  "#2C313A00": ["list.inactiveFocusOutline", "list.inactiveFocusOutline"],
+  "#A78CFABF": [
+    "editorOverviewRuler.wordHighlightStrongForeground",
+    "editorOverviewRuler.wordHighlightStrongForeground"
+  ],
+  "#32446400": [
+    "editor.snippetTabstopHighlightBorder",
+    "editor.snippetTabstopHighlightBorder",
+    "editor.findMatchHighlightBorder"
+  ],
+  "#2F323B00": [
+    "gitlens.trailingLineBackgroundColor",
+    "gitlens.trailingLineBackgroundColor",
+    "editor.lineHighlightBorder"
+  ],
+  "#45B7464D": [
+    "mergeEditor.change.word.background",
+    "mergeEditor.change.word.background"
+  ],
+  "#A78CFA": [
+    "settings.modifiedItemIndicator",
+    "settings.modifiedItemIndicator",
+    "editorOverviewRuler.modifiedForeground",
+    "symbolIcon.keywordForeground",
+    "tab.unfocusedInactiveModifiedBorder",
+    "tab.inactiveModifiedBorder",
+    "tab.activeModifiedBorder",
+    "gitDecoration.modifiedResourceForeground",
+    "symbolIcon.snippetForeground",
+    "charts.purple",
+    "editorGutter.modifiedBackground",
+    "minimapGutter.modifiedBackground",
+    "tab.unfocusedActiveModifiedBorder"
+  ],
+  "#585D68": [
+    "gitlens.trailingLineForegroundColor",
+    "gitlens.trailingLineForegroundColor"
+  ],
+  "#FF8A4C": [
+    "debugConsole.warningForeground",
+    "debugConsole.warningForeground",
+    "inputValidation.warningBorder",
+    "editorOverviewRuler.warningForeground",
+    "terminal.ansiBrightYellow",
+    "inputValidation.warningForeground",
+    "list.warningForeground",
+    "problemsWarningIcon.foreground",
+    "editorWarning.foreground",
+    "editorMarkerNavigationWarning.background",
+    "extensionIcon.starForeground"
+  ],
+  "#E4BF7Fcc": [
+    "editorBracketPairGuide.activeBackground1",
+    "editorBracketPairGuide.activeBackground1",
+    "editorBracketPairGuide.activeBackground4"
+  ],
+  "#60678E": ["editorWhitespace.foreground", "editorWhitespace.foreground"],
+  "#32446499": [
+    "editor.hoverHighlightBackground",
+    "editor.hoverHighlightBackground",
+    "editor.snippetTabstopHighlightBackground",
+    "editor.snippetFinalTabstopHighlightBackground"
+  ],
+  "#6c2022": ["statusBar.debuggingBackground", "statusBar.debuggingBackground"],
+  "#598DEFE6": [
+    "inputOption.activeBackground",
+    "inputOption.activeBackground",
+    "button.secondaryHoverBackground",
+    "button.hoverBackground",
+    "extensionButton.prominentHoverBackground"
+  ],
+  "#40AD41": [
+    "editorOverviewRuler.addedForeground",
+    "editorOverviewRuler.addedForeground",
+    "editorGutter.addedBackground",
+    "minimapGutter.addedBackground"
+  ],
+  "#598DEF00": [
+    "tab.unfocusedHoverBorder",
+    "tab.unfocusedHoverBorder",
+    "tab.hoverBorder",
+    "menu.selectionBorder",
+    "list.focusOutline",
+    "menubar.selectionBorder",
+    "inputOption.activeBorder",
+    "settings.focusedRowBorder",
+    "peekViewEditor.matchHighlightBorder"
+  ],
+  "#B0B7C300": [
+    "terminalCommandDecoration.defaultBackground",
+    "terminalCommandDecoration.defaultBackground"
+  ],
+  "#535773": [
+    "peekView.border",
+    "peekView.border",
+    "editorLineNumber.foreground"
+  ],
+  "#598DEFA5": [
+    "peekViewResult.selectionBackground",
+    "peekViewResult.selectionBackground"
+  ],
+  "#3FB93F": [
+    "terminalCommandDecoration.successBackground",
+    "terminalCommandDecoration.successBackground",
+    "terminal.ansiBrightGreen"
+  ],
+  "#598defB3": [
+    "statusBarItem.compactHoverBackground",
+    "statusBarItem.compactHoverBackground"
+  ],
+  "#98c379": [
+    "symbolIcon.stringForeground",
+    "symbolIcon.stringForeground",
+    "terminal.ansiGreen"
+  ],
+  "#FFF": [
+    "terminalCursor.background",
+    "terminalCursor.background",
+    "editorGutter.foldingControlForeground",
+    "list.filterMatchBackground"
+  ],
+  "#7BBE54": [
+    "gitDecoration.untrackedResourceForeground",
+    "gitDecoration.untrackedResourceForeground"
+  ],
+  "#F8F900": ["editor.findMatchBackground", "editor.findMatchBackground"],
+  "#4283F500": ["toolbar.hoverOutline", "toolbar.hoverOutline"],
+  "#DDE0E6": ["statusBar.debuggingForeground", "statusBar.debuggingForeground"],
+  "#B0B7C3": [
+    "foreground",
+    "foreground",
+    "charts.foreground",
+    "panelTitle.activeBorder",
+    "editorHoverWidget.foreground",
+    "terminal.foreground",
+    "symbolIcon.arrayForeground",
+    "checkbox.foreground",
+    "symbolIcon.objectForeground",
+    "symbolIcon.keyForeground",
+    "notifications.foreground",
+    "notificationCenterHeader.foreground",
+    "quickInput.foreground",
+    "panelTitle.activeForeground",
+    "symbolIcon.variableForeground"
+  ],
+  "#45B7464F": [
+    "diffEditor.insertedTextBackground",
+    "diffEditor.insertedTextBackground"
+  ],
+  "#000": [
+    "widget.shadow",
+    "widget.shadow",
+    "statusBarItem.activeBackground",
+    "terminal.ansiBlack",
+    "scrollbar.shadow"
+  ],
+  "#2F323B": [
+    "editor.rangeHighlightBackground",
+    "editor.rangeHighlightBackground",
+    "editorMarkerNavigation.background",
+    "editor.lineHighlightBackground"
+  ],
+  "#a31515": ["debugExceptionWidget.border", "debugExceptionWidget.border"],
+  "#FF6AB3": [
+    "terminal.ansiBrightMagenta",
+    "terminal.ansiBrightMagenta",
+    "symbolIcon.typeParameterForeground",
+    "gitDecoration.submoduleResourceForeground"
+  ],
+  "#ff8a4c": [
+    "statusBarItem.warningForeground",
+    "statusBarItem.warningForeground"
+  ],
+  "#21252B": [
+    "inputValidation.errorBackground",
+    "inputValidation.errorBackground",
+    "checkbox.background",
+    "input.border",
+    "welcomePage.tileBackground",
+    "walkThrough.embeddedEditorBackground",
+    "inputValidation.warningBackground",
+    "panel.border",
+    "terminal.border",
+    "debugToolBar.border",
+    "tab.inactiveBackground",
+    "editorGroupHeader.tabsBackground",
+    "inputValidation.infoBackground",
+    "statusBarItem.warningBackground",
+    "statusBarItem.prominentBackground",
+    "statusBarItem.errorBackground",
+    "statusBar.noFolderBackground",
+    "statusBar.background",
+    "sideBar.background",
+    "quickInputTitle.background",
+    "quickInput.background",
+    "editorGroupHeader.noTabsBackground",
+    "panelSection.border",
+    "panelSectionHeader.background",
+    "editorWidget.border",
+    "debugToolBar.background",
+    "editorWidget.background",
+    "listFilterWidget.background"
+  ],
+  "#96A4CD": ["activityBar.foreground", "activityBar.foreground"],
+  "#32446469": ["editor.foldBackground", "editor.foldBackground"],
+  "#F02B77": [
+    "extensionIcon.sponsorForeground",
+    "extensionIcon.sponsorForeground"
+  ],
+  "#5E658B": ["input.placeholderForeground", "input.placeholderForeground"],
+  "#D0D5E17F": ["minimap.findMatchHighlight", "minimap.findMatchHighlight"],
+  "#f14c4c54": [
+    "diffEditor.removedTextBackground",
+    "diffEditor.removedTextBackground"
+  ],
+  "#8A97C3": [
+    "symbolIcon.propertyForeground",
+    "symbolIcon.propertyForeground",
+    "terminal.ansiBrightWhite",
+    "editorInlayHint.foreground"
+  ],
+  "#e51400": [
+    "mergeEditor.conflict.unhandled.minimapOverViewRuler",
+    "mergeEditor.conflict.unhandled.minimapOverViewRuler",
+    "mergeEditor.conflict.handledUnfocused.border",
+    "statusBarItem.errorForeground",
+    "terminalCommandDecoration.errorBackground",
+    "mergeEditor.conflict.unhandledFocused.border",
+    "mergeEditor.conflict.unhandledUnfocused.border",
+    "terminal.ansiRed",
+    "mergeEditor.conflict.handled.minimapOverViewRuler",
+    "mergeEditor.conflict.handledFocused.border"
+  ],
+  "#FF90707F": [
+    "editorBracketMatch.background",
+    "editorBracketMatch.background",
+    "editorOverviewRuler.bracketMatchForeground"
+  ],
+  "#676E95FF": [
+    "editorUnnecessaryCode.opacity",
+    "editorUnnecessaryCode.opacity"
+  ],
+  "#282C34": ["titleBar.inactiveBackground", "titleBar.inactiveBackground"],
+  "#499149": [
+    "extensionButton.prominentBackground",
+    "extensionButton.prominentBackground"
+  ],
+  "#E1E4EA": [
+    "menubar.selectionForeground",
+    "menubar.selectionForeground",
+    "menu.selectionForeground"
+  ],
+  "#2D3039": [
+    "peekViewEditor.background",
+    "peekViewEditor.background",
+    "editorOverviewRuler.rangeHighlightForeground",
+    "peekViewEditorGutter.background"
+  ],
+  "#A78CFA72": [
+    "editor.wordHighlightStrongBackground",
+    "editor.wordHighlightStrongBackground"
+  ],
+  "#E51400": [
+    "editorOverviewRuler.errorForeground",
+    "editorOverviewRuler.errorForeground",
+    "inputValidation.errorForeground",
+    "problemsErrorIcon.foreground",
+    "list.errorForeground",
+    "gitDecoration.conflictingResourceForeground",
+    "errorForeground",
+    "debugConsole.errorForeground",
+    "inputValidation.errorBorder",
+    "editorError.foreground",
+    "editorMarkerNavigationError.background"
+  ],
+  "#5F668B": [
+    "editor.snippetFinalTabstopHighlightBorder",
+    "editor.snippetFinalTabstopHighlightBorder",
+    "diffEditor.diagonalFill"
+  ],
+  "#b0b7c3": ["editorWidget.foreground", "editorWidget.foreground"],
+  "#E514007F": ["minimap.errorHighlight", "minimap.errorHighlight"],
+  "#f14c4c": [
+    "charts.red",
+    "charts.red",
+    "editorOverviewRuler.deletedForeground",
+    "terminal.ansiBrightRed"
+  ],
+  "#324464": [
+    "editor.findMatchHighlightBackground",
+    "editor.findMatchHighlightBackground"
+  ],
+  "#A78CFA00": [
+    "editor.wordHighlightStrongBorder",
+    "editor.wordHighlightStrongBorder"
+  ],
+  "#A2ABE54C": [
+    "scrollbarSlider.hoverBackground",
+    "scrollbarSlider.hoverBackground",
+    "scrollbarSlider.activeBackground"
+  ],
+  "#d7dae0": [
+    "list.inactiveSelectionForeground",
+    "list.inactiveSelectionForeground",
+    "list.activeSelectionForeground",
+    "list.focusForeground",
+    "tab.unfocusedHoverForeground",
+    "terminal.tab.activeBorder",
+    "tab.hoverForeground",
+    "tab.activeForeground",
+    "settings.headerForeground",
+    "peekViewResult.selectionForeground",
+    "list.hoverForeground",
+    "breadcrumb.activeSelectionForeground",
+    "breadcrumb.focusForeground",
+    "list.inactiveSelectionIconForeground"
+  ],
+  "#598DEF": [
+    "activityBarBadge.background",
+    "activityBarBadge.background",
+    "notificationLink.foreground",
+    "editorMarkerNavigationInfo.background",
+    "sash.hoverBorder"
+  ],
+  "#21252B00": ["statusBar.border", "statusBar.border"],
+  "#676E9599": [
+    "button.secondaryBackground",
+    "button.secondaryBackground",
+    "button.background"
+  ],
+  "#FF8A4C7F": ["minimap.warningHighlight", "minimap.warningHighlight"],
+  "#5C617D": [
+    "activityBar.inactiveForeground",
+    "activityBar.inactiveForeground"
+  ],
+  "#CF68E1": [
+    "symbolIcon.booleanForeground",
+    "symbolIcon.booleanForeground",
+    "terminal.ansiMagenta",
+    "symbolIcon.nullForeground",
+    "editorBracketHighlight.foreground2",
+    "editorBracketHighlight.foreground5"
+  ],
+  "#ffffff": [
+    "statusBarItem.remoteForeground",
+    "statusBarItem.remoteForeground",
+    "extensionBadge.remoteForeground"
+  ],
+  "#252830": ["breadcrumbPicker.background", "breadcrumbPicker.background"],
+  "#598DEF3F": [
+    "settings.rowHoverBackground",
+    "settings.rowHoverBackground",
+    "quickInputList.focusBackground",
+    "list.inactiveFocusBackground"
+  ],
+  "#6495EEcc": [
+    "editorBracketPairGuide.activeBackground3",
+    "editorBracketPairGuide.activeBackground3",
+    "editorBracketPairGuide.activeBackground6"
+  ],
+  "#F14C4C": [
+    "gitDecoration.deletedResourceForeground",
+    "gitDecoration.deletedResourceForeground",
+    "editorGutter.deletedBackground",
+    "minimapGutter.deletedBackground"
+  ],
+  "#d7dae0BF": [
+    "tab.unfocusedActiveForeground",
+    "tab.unfocusedActiveForeground"
+  ],
+  "#21252b": [
+    "menu.background",
+    "menu.background",
+    "notifications.background",
+    "notificationCenterHeader.background"
+  ],
+  "#A2ABE533": [
+    "minimapSlider.activeBackground",
+    "minimapSlider.activeBackground",
+    "scrollbarSlider.background",
+    "minimapSlider.hoverBackground"
+  ],
+  "#FF9070BF": [
+    "editorIndentGuide.activeBackground",
+    "editorIndentGuide.activeBackground"
+  ],
+  "#598DEF4C": [
+    "panelSection.dropBackground",
+    "panelSection.dropBackground",
+    "list.dropBackground",
+    "sideBar.dropBackground",
+    "editorGroup.dropBackground"
+  ],
+  "#4283F5": [
+    "terminal.ansiBlue",
+    "terminal.ansiBlue",
+    "welcomePage.progress.foreground",
+    "textLink.foreground",
+    "textBlockQuote.border",
+    "progressBar.background"
+  ],
+  "#4283F58F": [
+    "toolbar.activeBackground",
+    "toolbar.activeBackground",
+    "toolbar.hoverBackground"
+  ],
+  "#56B7C3": [
+    "symbolIcon.operatorForeground",
+    "symbolIcon.operatorForeground",
+    "symbolIcon.classForeground",
+    "symbolIcon.structForeground",
+    "statusBarItem.remoteBackground",
+    "terminal.ansiCyan",
+    "extensionBadge.remoteBackground",
+    "symbolIcon.interfaceForeground",
+    "terminal.ansiBrightCyan"
+  ],
+  "#008099BF": [
+    "editorOverviewRuler.wordHighlightForeground",
+    "editorOverviewRuler.wordHighlightForeground",
+    "editorOverviewRuler.selectionHighlightForeground"
+  ],
+  "#E06C75": [
+    "symbolIcon.packageForeground",
+    "symbolIcon.packageForeground",
+    "symbolIcon.namespaceForeground",
+    "symbolIcon.moduleForeground",
+    "gitDecoration.stageDeletedResourceForeground",
+    "symbolIcon.fieldForeground"
+  ],
+  "#fff": [
+    "terminal.ansiWhite",
+    "terminal.ansiWhite",
+    "listFilterWidget.outline",
+    "inputOption.activeForeground",
+    "extensionButton.prominentForeground",
+    "activityBarBadge.foreground"
+  ],
+  "#838FA7": [
+    "editorBracketHighlight.unexpectedBracket.foreground",
+    "editorBracketHighlight.unexpectedBracket.foreground"
+  ],
+  "#DCDFE5": [
+    "extensionButton.foreground",
+    "extensionButton.foreground",
+    "extensionButton.separator",
+    "button.foreground",
+    "button.secondaryForeground"
+  ],
+  "#181A1F": [
+    "notificationToast.border",
+    "notificationToast.border",
+    "notifications.border",
+    "settings.numberInputBorder",
+    "dropdown.border",
+    "settings.checkboxBorder",
+    "textCodeBlock.background",
+    "editorSuggestWidget.border",
+    "merge.border",
+    "tab.border",
+    "settings.dropdownListBorder",
+    "notificationCenter.border",
+    "settings.textInputBorder",
+    "editorHoverWidget.border",
+    "settings.dropdownBorder",
+    "editorGroup.border"
+  ],
+  "#D365E5": [
+    "editorLink.activeForeground",
+    "editorLink.activeForeground",
+    "textLink.activeForeground",
+    "gitDecoration.stageModifiedResourceForeground"
+  ],
+  "#F8F9004C": [
+    "editor.findRangeHighlightBackground",
+    "editor.findRangeHighlightBackground"
+  ],
+  "#FF9070": [
+    "symbolIcon.unitForeground",
+    "symbolIcon.unitForeground",
+    "terminalCursor.foreground",
+    "textPreformat.foreground",
+    "charts.orange",
+    "symbolIcon.numberForeground",
+    "editorCursor.foreground",
+    "symbolIcon.constantForeground",
+    "symbolIcon.enumeratorMemberForeground"
+  ],
+  "#282c3400": [
+    "titleBar.border",
+    "titleBar.border",
+    "editorGroupHeader.border",
+    "editorGroup.emptyBackground",
+    "tab.unfocusedActiveBorder",
+    "activityBar.border",
+    "peekViewResult.matchHighlightBackground",
+    "tab.activeBorderTop",
+    "tab.unfocusedActiveBorderTop",
+    "editorGroupHeader.tabsBorder",
+    "tab.activeBorder"
+  ],
+  "#5F668B00": ["editorOverviewRuler.border", "editorOverviewRuler.border"],
+  "#FFFFFF": ["editorCursor.background", "editorCursor.background"],
+  "#676E95": [
+    "editorRuler.foreground",
+    "editorRuler.foreground",
+    "titleBar.inactiveForeground",
+    "tab.inactiveForeground",
+    "editorUnnecessaryCode.border",
+    "terminal.ansiBrightBlack",
+    "tab.unfocusedInactiveForeground",
+    "list.invalidItemForeground",
+    "symbolIcon.textForeground",
+    "gitDecoration.ignoredResourceForeground",
+    "panelTitle.inactiveForeground"
+  ],
+  "#a3151533": [
+    "debugExceptionWidget.background",
+    "debugExceptionWidget.background"
+  ],
+  "#5F97FFF2": ["minimap.selectionHighlight", "minimap.selectionHighlight"],
+  "#E4BF7F": [
+    "gitDecoration.renamedResourceForeground",
+    "gitDecoration.renamedResourceForeground",
+    "terminal.ansiYellow",
+    "editorBracketHighlight.foreground4",
+    "editorBracketHighlight.foreground1",
+    "charts.yellow"
+  ]
+}
