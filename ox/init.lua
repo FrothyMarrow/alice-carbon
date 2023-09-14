@@ -154,9 +154,9 @@ do
   -- end)
 end
 
-write_json(out_file_path("eva_vscode_set.json"), color_set)
-write_json(out_file_path("vscode_colors.json"), ordered_edits)
-write_json(out_file_path("vscode_colors_ordered.json"), ordered_kv)
+-- write_json(out_file_path("eva_vscode_set.json"), color_set)
+write_json(out_file_path("eva_vscode_colors.json"), ordered_edits)
+-- write_json(out_file_path("vscode_colors_ordered.json"), ordered_kv)
 
 local tokens = read_json("./tokens.json")
 local token_set = {}
@@ -216,7 +216,7 @@ for k, v in pairs(final_set) do
 end
 
 
-write_json(out_file_path("final_tokens.json"), final_keys)
+-- write_json(out_file_path("final_tokens.json"), final_keys) -- final vscode colors and such
 
 local token_set_keys = {}
 
@@ -224,7 +224,7 @@ for k, v in pairs(token_set) do
   table.insert(token_set_keys, k)
 end
 
-write_json(out_file_path("semantic_tokens_colors.json"), token_set_keys)
+-- write_json(out_file_path("semantic_tokens_colors.json"), token_set_keys)
 
 vim.api.nvim_set_hl(0, "Cursor", { fg = oxocarbon.base00, bg = oxocarbon.base04 })
 ; (vim.g)["terminal_color_0"] = oxocarbon.base01

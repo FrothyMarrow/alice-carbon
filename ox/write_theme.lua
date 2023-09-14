@@ -11,14 +11,7 @@ for eva_color, ox_key in pairs(eva) do
 	end
 
 	if ox[ox_key] == nil or type(ox[ox_key]) ~= "string" then
-		error(
-			"eva set pointing into invalid value"
-				.. eva_color
-				.. " pointing to : "
-				.. ox_key
-				.. " value: "
-				.. ox[ox_key]
-		)
+		error("eva set pointing into invalid value" .. eva_color .. " pointing to : " .. ox_key)
 	end
 	print("eva :" .. eva_color .. " : ", ox_key)
 

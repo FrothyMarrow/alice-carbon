@@ -35,7 +35,7 @@
     "alpha2": { "bg": "NONE", "fg": "#d0d0d0" },
     "Substitute": { "bg": "#3ddbd9", "fg": "#262626" },
     "StatusCommand": { "bg": "#42be65", "fg": "#161616" },
-    "CmpItemKindProperty": { "bg": "#ff7eb6", "fg": "#262626" },
+    "CmpItemKindProperty": { "bg": "#ff7eb6", "fg": "#262626" },vimvimvimvim
     "DiffChanged": { "bg": "NONE", "fg": "#78a9ff" },
     "TelescopeMatching": {
       "bg": "NONE",
