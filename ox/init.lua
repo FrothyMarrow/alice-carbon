@@ -77,10 +77,11 @@ local oxocarbon = (
   }
 )
 
-local colors_out_dir = out_file_path("./colors.json")
+local colors_out_dir = out_file_path("./oxocarbon.json")
 
 write_json(colors_out_dir, oxocarbon)
-print("colors")
+
+print("oxocarbon")
 os.execute("batcat " .. colors_out_dir)
 
 -- print(io.read("*all"))
@@ -106,7 +107,6 @@ for key, eva_color in pairs(edits["colors"]) do
       goto break2
     end
 
-    print(k2)
     table.insert(ordered_edits[normalized_color], k2)
     local obj = {}
     obj[key] = normalized_color
@@ -122,10 +122,30 @@ end
 do
   local parsed_set = {}
   for k in pairs(color_set) do
-    table.insert(parsed_set, k)
+    if string.len(k) < 7 then
+      print(k .. "smaller than 7?")
+      goto continue
+    end
+    local function calc_size(str)
+      local r = tonumber(string.sub(k, 2, 3), 16)
+      local g = tonumber(string.sub(k, 4, 5), 16)
+      local b = tonumber(string.sub(k, 6, 7), 16)
+
+      return r + g + b
+    end
+
+    if #parsed_set == 0 then
+      table.insert(parsed_set, k)
+    end
+    if calc_size(k) > calc_size(parsed_set[#parsed_set]) then
+      table.insert(parsed_set, k)
+    else
+      table.insert(parsed_set, 1, k)
+    end
+    ::continue::
   end
   color_set = {}
-  color_set["unorganized"] = parsed_set
+  color_set = parsed_set
   -- color_set["organized"] = table.sort(parsed_set, function(a, b)
   --   if tonumber(a[string.len(a) - 1], 16) > tonumber(b[string.len(b) - 1], 16) then
   --     return true
@@ -134,15 +154,82 @@ do
   -- end)
 end
 
-write_json(out_file_path("eva_color_set.json"), color_set)
+write_json(out_file_path("eva_vscode_set.json"), color_set)
 write_json(out_file_path("vscode_colors.json"), ordered_edits)
 write_json(out_file_path("vscode_colors_ordered.json"), ordered_kv)
+
+local tokens = read_json("./tokens.json")
+local token_set = {}
+local token_set_size = 0
+local parsed_tokens = {}
+for k, v in pairs(tokens["tokens"]) do
+  local settings = v["settings"]
+
+  if type(settings) == "nil" then
+    print("No Settings" .. k)
+    goto continue
+  end
+
+  local normalized_color = string.lower(settings["foreground"])
+
+  if token_set[normalized_color] == nil then
+    token_set_size = token_set_size + 1
+    token_set[normalized_color] = true
+    parsed_tokens[normalized_color] = {}
+    -- goto continue
+  end
+
+  table.insert(parsed_tokens[normalized_color],
+    { scope = v["scope"], fontStyle = settings["fontStyle"], name = v["name"] })
+  -- parsed_tokens[normalized_color] = { scope = v["scope"], fontStyle = settings["fontStyle"] }
+  ::continue::
+end
+
+
+local token_info = {
+  info = { colors = token_set_size },
+  tokens = parsed_tokens
+}
+write_json(out_file_path("tokens_parsed.json"), token_info)
 
 local theme = {
   name = "Alice Oxocarbon Port",
   type = "dark"
 }
 
+
+local final_set = {}
+
+
+for k, v in pairs(color_set) do
+  if final_set[v] == nil then
+    final_set[v] = true
+  end
+end
+
+for k, v in pairs(token_set) do
+  if final_set[k] == nil then
+    final_set[k] = true
+  end
+end
+
+
+local final_keys = {}
+
+for k, v in pairs(final_set) do
+  table.insert(final_keys, k)
+end
+
+
+write_json(out_file_path("final_tokens.json"), final_keys)
+
+local token_set_keys = {}
+
+for k, v in pairs(token_set) do
+  table.insert(token_set_keys, k)
+end
+
+write_json(out_file_path("semantic_tokens_colors.json"), token_set_keys)
 
 vim.api.nvim_set_hl(0, "Cursor", { fg = oxocarbon.base00, bg = oxocarbon.base04 })
 ; (vim.g)["terminal_color_0"] = oxocarbon.base01
