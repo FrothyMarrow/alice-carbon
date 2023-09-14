@@ -13,11 +13,11 @@ for eva_color, ox_key in pairs(eva) do
 	if ox[ox_key] == nil or type(ox[ox_key]) ~= "string" then
 		error(
 			"eva set pointing into invalid value"
-				.. eva_color
-				.. " pointing to : "
-				.. ox_key
-				.. " value: "
-				.. ox[ox_key]
+			.. eva_color
+			.. " pointing to : "
+			.. ox_key
+			.. " value: "
+			.. ox[ox_key]
 		)
 	end
 	print("eva :" .. eva_color .. " : ", ox_key)
@@ -37,12 +37,16 @@ end
 
 -- END OF VALIDATION
 
+print("\n\nCOLORS VALIDATED PASSED \n\n")
+
+local vscode_edits = read_json(out_file_path("vscode_colors.json"))
 local eva_tokens = tokens_parsed["tokens"]
 local final_theme = {
 	["$schema"] = "vscode://schemas/color-theme",
 	name = "Alice Oxocarbon Port BOLD",
 	type = "dark",
 	semanticHighlighting = false,
+	colors = {},
 	tokenColors = {},
 }
 
@@ -50,6 +54,18 @@ for eva_color, tokens in pairs(eva_tokens) do
 	local ox_color_key = eva[eva_color]
 	local ox_color = ox[ox_color_key]
 
+	-- color not present in editor -> skip
+	if vscode_edits[eva_color] == nil then
+		goto skipeditor
+	end
+
+	for _, editor_key in pairs(vscode_edits[eva_color]) do
+		print(editor_key, " -> ", ox_color)
+		final_theme["colors"][editor_key] = ox_color
+	end
+
+	::skipeditor::
+	-- Semantic Tokens
 	for _, eva_token in pairs(tokens) do
 		local new_token = {
 			name = eva_token["name"],
