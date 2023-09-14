@@ -192,11 +192,6 @@ local token_info = {
 }
 write_json(out_file_path("tokens_parsed.json"), token_info)
 
-local theme = {
-  name = "Alice Oxocarbon Port",
-  type = "dark"
-}
-
 
 local final_set = {}
 
