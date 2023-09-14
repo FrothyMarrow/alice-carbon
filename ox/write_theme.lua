@@ -1,11 +1,12 @@
 local utils = require("utils")
 local eva = require("out/color_set")
+local ox = require("out/ox_base-colors")
 
 -- validation
 
 local eva_color_set_len = 0
 for k, v in pairs(eva) do
-	if v ~= nil and type(v) ~= "boolean" then
+	if v ~= nil and type(v) ~= "string" then
 		error("invalid value in eva set key:" .. k .. " value: ", v)
 	end
 
