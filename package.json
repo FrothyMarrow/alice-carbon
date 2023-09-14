@@ -12,9 +12,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "alc-carbon-them",
+        "label": "alice-carbon-bold",
         "uiTheme": "vs-dark",
-        "path": "./themes/alc-carbon-them-color-theme.json"
+        "path": "./themes/alice-carbon-bold.json"
+      },
+      {
+        "label": "alice-carbon-bold-manual",
+        "uiTheme": "vs-dark",
+        "path": "./themes/alice-carbon-bold-manual.json"
       }
     ]
   }

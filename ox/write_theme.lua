@@ -13,11 +13,11 @@ for eva_color, ox_key in pairs(eva) do
 	if ox[ox_key] == nil or type(ox[ox_key]) ~= "string" then
 		error(
 			"eva set pointing into invalid value"
-			.. eva_color
-			.. " pointing to : "
-			.. ox_key
-			.. " value: "
-			.. ox[ox_key]
+				.. eva_color
+				.. " pointing to : "
+				.. ox_key
+				.. " value: "
+				.. ox[ox_key]
 		)
 	end
 	print("eva :" .. eva_color .. " : ", ox_key)
@@ -50,33 +50,42 @@ local final_theme = {
 	tokenColors = {},
 }
 
+--overrides
+local overrides = require("manual")
+for override_key, override_color in pairs(overrides) do
+	print("Override : ", override_key)
+	final_theme["colors"][override_key] = override_color
+end
+
 for eva_color, tokens in pairs(eva_tokens) do
 	local ox_color_key = eva[eva_color]
 	local ox_color = ox[ox_color_key]
 
-	-- color not present in editor -> skip
-	if vscode_edits[eva_color] == nil then
-		goto skipeditor
-	end
+	-- check if it is a editor color
+	if vscode_edits[eva_color] ~= nil then
+		for _, editor_key in pairs(vscode_edits[eva_color]) do
+			print(editor_key, " -> ", ox_color)
+			-- check for editor.key override
+			if final_theme["colors"][editor_key] == nil then
+				final_theme["colors"][editor_key] = ox_color
+			else
+				print("editor key : ", editor_key, " has manual override")
+			end
+		end
 
-	for _, editor_key in pairs(vscode_edits[eva_color]) do
-		print(editor_key, " -> ", ox_color)
-		final_theme["colors"][editor_key] = ox_color
-	end
-
-	::skipeditor::
-	-- Semantic Tokens
-	for _, eva_token in pairs(tokens) do
-		local new_token = {
-			name = eva_token["name"],
-			scope = eva_token["scope"],
-			settings = {
-				fontStyle = eva_token["fontStyle"],
-				foreground = ox_color,
-			},
-		}
-		table.insert(final_theme["tokenColors"], new_token)
+		-- Semantic Tokens
+		for _, eva_token in pairs(tokens) do
+			local new_token = {
+				name = eva_token["name"],
+				scope = eva_token["scope"],
+				settings = {
+					fontStyle = eva_token["fontStyle"],
+					foreground = ox_color,
+				},
+			}
+			table.insert(final_theme["tokenColors"], new_token)
+		end
 	end
 end
 
-write_json(out_file_path("alice-carbon-final.json"), final_theme)
+write_json("../themes/alice-carbon-bold.json", final_theme)
