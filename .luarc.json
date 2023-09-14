@@ -1,0 +1,8 @@
+{
+    "diagnostics.globals": [
+        "write_json",
+        "read_json",
+        "out_file_path",
+        "write_empty_lua_set"
+    ]
+}
