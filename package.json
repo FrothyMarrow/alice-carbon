@@ -2,7 +2,8 @@
   "name": "alc-carbon-theme",
   "displayName": "alc-carbon-theme",
   "description": "",
-  "version": "3.0.0",
+  "version": "1.0.0",
+  "publisher": "alice-rei",
   "engines": {
     "vscode": "^1.82.0"
   },
