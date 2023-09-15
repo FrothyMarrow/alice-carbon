@@ -27,12 +27,11 @@ print("parsed_tokens colors:", tokens_parsed["info"]["colors"])
 if eva_color_set_len ~= tokens_parsed["info"]["colors"] then
 	error("invalid eva_set size , should be " .. tokens_parsed["info"]["colors"])
 end
+print("\n\nCOLOR VALIDATION PASSED \n\n")
 
 -- END OF VALIDATION
 
-print("\n\nCOLORS VALIDATED PASSED \n\n")
-
-local vscode_edits = read_json(out_file_path("vscode_colors.json"))
+local vscode_edits = read_json(out_file_path("eva_vscode_colors.json"))
 local eva_tokens = tokens_parsed["tokens"]
 local final_theme = {
 	["$schema"] = "vscode://schemas/color-theme",
@@ -50,6 +49,9 @@ for override_key, override_color in pairs(overrides) do
 	final_theme["colors"][override_key] = override_color
 end
 
+local final_theme_nobold = deepcopy(final_theme)
+final_theme_nobold["name"] = "Alice Oxocarbon Port"
+
 for eva_color, tokens in pairs(eva_tokens) do
 	local ox_color_key = eva[eva_color]
 	local ox_color = ox[ox_color_key]
@@ -61,6 +63,8 @@ for eva_color, tokens in pairs(eva_tokens) do
 			-- check for editor.key override
 			if final_theme["colors"][editor_key] == nil then
 				final_theme["colors"][editor_key] = ox_color
+				-- TODO:Make this cleaner ?
+				final_theme_nobold["colors"][editor_key] = ox_color
 			else
 				print("editor key : ", editor_key, " has manual override")
 			end
@@ -76,9 +80,15 @@ for eva_color, tokens in pairs(eva_tokens) do
 					foreground = ox_color,
 				},
 			}
+
 			table.insert(final_theme["tokenColors"], new_token)
+
+			local nobold_token = deepcopy(new_token)
+			nobold_token["settings"]["fontStyle"] = ""
+			table.insert(final_theme_nobold["tokenColors"], nobold_token)
 		end
 	end
 end
 
 write_json("../themes/alice-carbon-bold.json", final_theme)
+write_json("../themes/alice-carbon.json", final_theme_nobold)
