@@ -1,16 +1,10 @@
-# alc-carbon-theme README
+# alc-carbon-theme
 
-## Working with Markdown
+### [Nyoom Oxocarbon Theme](https://github.com/nyoom-engineering/oxocarbon.nvim) port for Visual Studio Code
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+<!-- ![Screenshot os visual studio code displaying the theme being used](./examples/alice-carbon-bold.png) -->
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+- Semantic tokens generated based on the [Eva Theme](https://github.com/fisheva/Eva-Theme/)
+- Most of the Editor Colors where imported from [oxocarbon-port](https://marketplace.visualstudio.com/items?itemName=beamlnwza.oxocarbon-port)
 
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+<!-- Code for generating the theme(written in lua) can be found in the [ox](/ox/) folder. -->
