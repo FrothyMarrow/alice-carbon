@@ -7,3 +7,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 
 - Initial release
+
+## [1.1.2] - 2023/11/04
+
+- Smaller extension size
+- Added examples to README
