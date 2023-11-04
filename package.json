@@ -3,8 +3,9 @@
   "displayName": "Alice Carbon",
   "description": "NVIM Oxocarbon port with a added comfy semantic highlighting",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "publisher": "alice-rei",
+  "repository": "https://github.com/lzldev/alice-carbon",
   "keywords": [
     "oxocarbon",
     "nvim",
