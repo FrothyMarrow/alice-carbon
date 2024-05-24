@@ -262,7 +262,7 @@
     "editorGroupHeader.tabsBackground": "#262626",
     "checkbox.background": "#393939",
     "terminal.ansiGreen": "#0dbc79",
-    "editorWhitespace.foreground": "#ffffff00",
+    "editorWhitespace.foreground": "#e3e4e26d",
     "debugConsole.errorForeground": "#ee5396",
     "editor.wordHighlightStrongBorder": "#ffffff00",
     "statusBar.debuggingForeground": "#c693ff",
